@@ -163,11 +163,6 @@ function! AE_promptQuery() "{{{1
   call AE_execQuery( l:sqlquery )
 endfunction "}}}
 
-function! AE_resetPassword() "{{{1
-  let g:sqlplus_userid = ""
-  let g:sqlplus_passwd = ""
-endfunction "}}}
-
 function! AE_execLiteralQuery( sql_query ) "{{{1
   let l:query = substitute( a:sql_query, '\c\<INTO\>.*\<FROM\>', 'FROM', 'g' )
 
